@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, Grid, Row, Col, Thumbnail } from 'react-bootstrap';
 
 class App extends Component {
   render() {
@@ -9,7 +9,7 @@ class App extends Component {
         <Navbar collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#brand">PaleFire Designs</a>
+              <a href="#brand" style={{'fontSize': '25px'}}>Pale Fire Designs</a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
@@ -27,6 +27,41 @@ class App extends Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
+
+        <Grid>
+          <Row>
+            <Col xs={6} md={4}>
+              <Thumbnail href="#" alt="necklace" src="./necklace.jpg">
+                <h3>Necklace</h3>
+              </Thumbnail>
+            </Col>
+            <Col xs={6} md={4}>
+              <Thumbnail href="#" alt="necklace" src="./necklace.jpg">
+                <h3>Necklace</h3>
+              </Thumbnail>
+            </Col>
+            <Col xs={6} md={4}>
+              <Thumbnail href="#" alt="necklace" src="./necklace.jpg">
+                <h3>Necklace</h3>
+              </Thumbnail>
+            </Col>
+            <Col xs={6} md={4}>
+              <Thumbnail href="#" alt="necklace" src="./necklace.jpg">
+                <h3>Necklace</h3>
+              </Thumbnail>
+            </Col>
+            <Col xs={6} md={4}>
+              <Thumbnail href="#" alt="necklace" src="./necklace.jpg">
+                <h3>Necklace</h3>
+              </Thumbnail>
+            </Col>
+            <Col xs={6} md={4}>
+              <Thumbnail href="#" alt="necklace" src="./necklace.jpg">
+                <h3>Necklace</h3>
+              </Thumbnail>
+            </Col>
+          </Row>
+        </Grid>
       </div>
     );
   }
