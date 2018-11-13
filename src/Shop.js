@@ -28,7 +28,6 @@ class Shop extends Component {
           <Modal.Header className="modal-header" closeButton>
             <Modal.Title className="h3">Lampwork Drop Pendant Multistrand Necklace with Beaded Bails, Tricut Seed Beads and Solid Bronze Disc</Modal.Title>
             <Button className="add-to-cart button">$145 - Add to Cart</Button>
-            <br/><a className='details-link' href="#">View full details</a>
           </Modal.Header>
           <Modal.Body>
             <Carousel interval={null}>
@@ -43,6 +42,9 @@ class Shop extends Component {
               </Carousel.Item>
             </Carousel>
           </Modal.Body>
+          <Modal.Footer>
+            <a className='details-link' href="#">View full details</a>
+          </Modal.Footer>
         </Modal>
           <div className='items'>
             <Thumbnail href="#" onClick={this.handleShowModal} alt="necklace" src="./necklace.jpg" className="centered">
