@@ -59,38 +59,42 @@ class Shop extends Component {
           <Row>
             <Col xs={6} md={4}>
               <Thumbnail href="#" onClick={this.handleShowModal} alt="necklace" src="./necklace.jpg" className="centered">
-                <h3>Lampwork Drop Pendant</h3>
-                <p>$145</p>
               </Thumbnail>
             </Col>
             <Col xs={6} md={4}>
               <Thumbnail href="#" alt="bracelet" src="./bracelet.jpg" className="centered">
-                <h3>Wings of Desire</h3>
-                <p>$145</p>
               </Thumbnail>
             </Col>
             <Col xs={6} md={4}>
               <Thumbnail href="#" alt="necklace" src="./necklace.jpg" className="centered">
-                <h3>Lampwork Drop Pendant</h3>
-                <p>$145</p>
               </Thumbnail>
             </Col>
             <Col xs={6} md={4}>
               <Thumbnail href="#" alt="necklace" src="./necklace.jpg" className="centered">
-                <h3>Lampwork Drop Pendant</h3>
-                <p>$145</p>
               </Thumbnail>
             </Col>
             <Col xs={6} md={4}>
               <Thumbnail href="#" alt="necklace" src="./necklace.jpg" className="centered">
-                <h3>Lampwork Drop Pendant</h3>
-                <p>$145</p>
               </Thumbnail>
             </Col>
             <Col xs={6} md={4}>
               <Thumbnail href="#" alt="bracelet" src="./bracelet.jpg" className="centered">
-                <h3>Wings of Desire</h3>
-                <p>$145</p>
+              </Thumbnail>
+            </Col>
+            <Col xs={6} md={4}>
+              <Thumbnail href="#" alt="necklace" src="./necklace.jpg" className="centered">
+              </Thumbnail>
+            </Col>
+            <Col xs={6} md={4}>
+              <Thumbnail href="#" alt="bracelet" src="./bracelet.jpg" className="centered">
+              </Thumbnail>
+            </Col>
+            <Col xs={6} md={4}>
+              <Thumbnail href="#" alt="necklace" src="./necklace.jpg" className="centered">
+              </Thumbnail>
+            </Col>
+            <Col xs={6} md={4}>
+              <Thumbnail href="#" alt="bracelet" src="./bracelet.jpg" className="centered">
               </Thumbnail>
             </Col>
           </Row>
