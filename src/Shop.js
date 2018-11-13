@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Navigation from './Navigation';
-import { Grid, Row, Col, Carousel, Thumbnail, Modal, Button, Collapse } from 'react-bootstrap';
+import { Carousel, Thumbnail, Modal, Button, Collapse } from 'react-bootstrap';
 
 class Shop extends Component {
   constructor() {
@@ -55,50 +55,20 @@ class Shop extends Component {
             <p style={{"paddingTop": "10px"}}>$145</p>
           </Modal.Footer>
         </Modal>
-        <Grid>
-          <Row>
-            <Col xs={6} md={4}>
-              <Thumbnail href="#" onClick={this.handleShowModal} alt="necklace" src="./necklace.jpg" className="centered">
-              </Thumbnail>
-            </Col>
-            <Col xs={6} md={4}>
-              <Thumbnail href="#" alt="bracelet" src="./bracelet.jpg" className="centered">
-              </Thumbnail>
-            </Col>
-            <Col xs={6} md={4}>
-              <Thumbnail href="#" alt="necklace" src="./necklace.jpg" className="centered">
-              </Thumbnail>
-            </Col>
-            <Col xs={6} md={4}>
-              <Thumbnail href="#" alt="necklace" src="./necklace.jpg" className="centered">
-              </Thumbnail>
-            </Col>
-            <Col xs={6} md={4}>
-              <Thumbnail href="#" alt="necklace" src="./necklace.jpg" className="centered">
-              </Thumbnail>
-            </Col>
-            <Col xs={6} md={4}>
-              <Thumbnail href="#" alt="bracelet" src="./bracelet.jpg" className="centered">
-              </Thumbnail>
-            </Col>
-            <Col xs={6} md={4}>
-              <Thumbnail href="#" alt="necklace" src="./necklace.jpg" className="centered">
-              </Thumbnail>
-            </Col>
-            <Col xs={6} md={4}>
-              <Thumbnail href="#" alt="bracelet" src="./bracelet.jpg" className="centered">
-              </Thumbnail>
-            </Col>
-            <Col xs={6} md={4}>
-              <Thumbnail href="#" alt="necklace" src="./necklace.jpg" className="centered">
-              </Thumbnail>
-            </Col>
-            <Col xs={6} md={4}>
-              <Thumbnail href="#" alt="bracelet" src="./bracelet.jpg" className="centered">
-              </Thumbnail>
-            </Col>
-          </Row>
-        </Grid>
+          <div className='items'>
+            <Thumbnail href="#" onClick={this.handleShowModal} alt="necklace" src="./necklace.jpg" className="centered">
+            </Thumbnail>
+            <Thumbnail href="#" alt="bracelet" src="./bracelet.jpg" className="centered">
+            </Thumbnail>
+            <Thumbnail href="#" alt="necklace" src="./necklace.jpg" className="centered">
+            </Thumbnail>
+            <Thumbnail href="#" alt="necklace" src="./necklace.jpg" className="centered">
+            </Thumbnail>
+            <Thumbnail href="#" alt="necklace" src="./necklace.jpg" className="centered">
+            </Thumbnail>
+            <Thumbnail href="#" alt="bracelet" src="./bracelet.jpg" className="centered">
+            </Thumbnail>
+          </div>
       </div>
     );
   }

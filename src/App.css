@@ -51,3 +51,9 @@ a:focus {
     color: black;
     cursor: pointer;
 }
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
