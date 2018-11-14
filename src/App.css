@@ -75,21 +75,6 @@ a:focus {
     width: 300px;
 }
 
-.details-link {
-    font-size: 20px;
-    color: #777;
-    text-decoration: underline;
-}
-
-.details-link:hover {
-    color: black;
-    text-decoration: underline;
-}
-
-.add-to-cart {
-    margin-top: 10px;
-}
-
 .modal-dialog {
     max-width: 400px;
 }

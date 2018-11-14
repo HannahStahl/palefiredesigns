@@ -27,7 +27,6 @@ class Shop extends Component {
         <Modal show={this.state.showModal} onHide={this.handleCloseModal}>
           <Modal.Header className="modal-header" closeButton>
             <Modal.Title className="h3">Lampwork Drop Pendant Multistrand Necklace with Beaded Bails, Tricut Seed Beads and Solid Bronze Disc</Modal.Title>
-            <Button className="add-to-cart button">$145 - Add to Cart</Button>
           </Modal.Header>
           <Modal.Body>
             <Carousel interval={null}>
@@ -43,7 +42,7 @@ class Shop extends Component {
             </Carousel>
           </Modal.Body>
           <Modal.Footer>
-            <a className='details-link' href="#">View full details</a>
+            <Button className="add-to-cart button">$145 - Add to Cart</Button>
           </Modal.Footer>
         </Modal>
           <div className='items'>
