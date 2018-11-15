@@ -112,9 +112,24 @@ definitions:
   GetItemResponse:
     required:
       - id
+      - title
+      - description
+      - price
+      - photos
     properties:
       id:
         type: string
+      title:
+        type: string
+      description:
+        type: string
+      price:
+        type: string
+      photos:
+        type: array
+        items:
+          $ref: '#/definitions/Photo'
+    additionalProperties: true
   Item:
     type: object
     properties:
@@ -123,7 +138,7 @@ definitions:
       description:
         type: string
       price:
-        type: number
+        type: string
       photos:
         type: array
         items:
@@ -171,7 +186,7 @@ definitions:
             description:
               type: string
             price:
-              type: number
+              type: string
             photos:
               type: array
               items:
