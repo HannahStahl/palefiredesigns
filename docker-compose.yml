@@ -1,7 +1,7 @@
 version: '3.5'
 services:
   client:
-    container_name: palefiredesigns
+    container_name: client
     build:
       context: ./client
       dockerfile: Dockerfile
@@ -10,5 +10,14 @@ services:
       - '/usr/src/app/node_modules'
     ports:
       - '3000:3000'
+    environment:
+      - NODE_ENV=development
+  server:
+    container_name: server
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - '10010:10010'
     environment:
       - NODE_ENV=development
