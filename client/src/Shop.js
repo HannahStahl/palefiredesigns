@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { Carousel, Thumbnail, Modal, Button } from 'react-bootstrap';
 import './App.css';
 import Navigation from './Navigation';
-import { Carousel, Thumbnail, Modal, Button } from 'react-bootstrap';
+import Filters from './components/Filters';
+import FilteredItems from './containers/FilteredItems';
 
 class Shop extends Component {
   constructor() {
@@ -24,6 +26,8 @@ class Shop extends Component {
     return (
       <div>
         <Navigation />
+        <Filters />
+        <FilteredItems />
         <Modal show={this.state.showModal} onHide={this.handleCloseModal}>
           <Modal.Header className="modal-header" closeButton>
             <Modal.Title className="h3">Lampwork Drop Pendant Multistrand Necklace with Beaded Bails, Tricut Seed Beads and Solid Bronze Disc</Modal.Title>
