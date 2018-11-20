@@ -1,13 +1,13 @@
 import { connect } from 'react-redux';
-import { setFilter } from '../actions';
+import { toggleFilter } from '../actions';
 import Filter from '../components/Filter';
 
 const mapStateToProps = (state, ownProps) => ({
-  active: ownProps.filter === state.filter
+  active: state.filters[ownProps.filter]
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-  onClick: () => dispatch(setFilter(ownProps.filter))
+  onClick: () => dispatch(toggleFilter(ownProps.filter))
 });
 
 export default connect(

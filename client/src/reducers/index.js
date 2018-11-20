@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
 import items from './items';
-import filter from './filter';
+import filters from './filters';
 
 export default combineReducers({
   items,
-  filter
+  filters
 });

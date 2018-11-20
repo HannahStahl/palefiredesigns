@@ -4,10 +4,9 @@ import DynamicFilter from '../containers/DynamicFilter';
 
 const Filters = () => (
   <div>
-    <DynamicFilter filter={VisibilityFilters.SHOW_ALL}>All</DynamicFilter>
-    <DynamicFilter filter={VisibilityFilters.NECKLACES_ONLY}>Collar Me Beautiful</DynamicFilter>
-    <DynamicFilter filter={VisibilityFilters.BRACELETS_ONLY}>Wrist Action</DynamicFilter>
-    <DynamicFilter filter={VisibilityFilters.EARRINGS_ONLY}>Lobe Trotters</DynamicFilter>
+    <DynamicFilter filter={VisibilityFilters.NECKLACE}>Collar Me Beautiful</DynamicFilter>
+    <DynamicFilter filter={VisibilityFilters.BRACELET}>Wrist Action</DynamicFilter>
+    <DynamicFilter filter={VisibilityFilters.EARRINGS}>Lobe Trotters</DynamicFilter>
   </div>
 );
 
