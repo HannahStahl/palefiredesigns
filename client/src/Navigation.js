@@ -8,8 +8,10 @@ class Navigation extends Component {
         <div>
             <Navbar collapseOnSelect>
             <Navbar.Header>
-            <Navbar.Brand>
-                <a href="/" style={{'fontSize': '25px'}}>Pale Fire Designs</a>
+            <Navbar.Brand className="logo">
+                <a href="/">
+                    <img src="./logo.png" alt="Pale Fire Designs" />
+                </a>
             </Navbar.Brand>
             <Navbar.Toggle />
             </Navbar.Header>
