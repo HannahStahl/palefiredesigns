@@ -1,11 +1,12 @@
 import { VisibilityFilters } from "../actions";
 
-const items = (state = [
+const dummyItems = [
   {
     id: 0,
     title: 'Necklace',
     description: 'This is a necklace.',
     image: './necklace.jpg',
+    images: ['./necklage.jpg', './necklace.jpg'],
     price: '145',
     type: VisibilityFilters.NECKLACE
   },
@@ -14,6 +15,7 @@ const items = (state = [
     title: 'bracelet',
     description: 'This is a bracelet.',
     image: './bracelet.jpg',
+    images: ['./bracelet.jpg', './bracelet.jpg'],
     price: '130',
     type: VisibilityFilters.BRACELET
   },
@@ -22,10 +24,13 @@ const items = (state = [
     title: 'earrings',
     decription: 'This is a pair of earrings.',
     image: './earrings.jpg',
+    images: ['./earrings.jpg', './earrings.jpg'],
     price: '95',
     type: VisibilityFilters.EARRINGS
   }
-], action) => {
+];
+
+const items = (state = dummyItems) => {
   return state;
 };
 
