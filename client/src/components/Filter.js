@@ -7,6 +7,7 @@ const Filter = ({ active, children, onClick }) => (
     onChange={onClick}
     checked={active}
     inline
+    className="checkbox"
   >
     {children}
   </Checkbox>

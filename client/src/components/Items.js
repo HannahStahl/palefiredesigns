@@ -3,18 +3,19 @@ import PropTypes from 'prop-types';
 import Item from './Item';
 
 const Items = ({ items }) => (
-  <ul>
+  <div className='items'>
     {items.map(item => (
       <Item key={item.id} {...item} />
     ))}
-  </ul>
+  </div>
 );
 
 Items.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
-      text: PropTypes.string.isRequired
+      title: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired
     }).isRequired
   ).isRequired
 };

@@ -9,10 +9,6 @@ const mapStateToProps = state => ({
   items: getVisibleItems(state.items, state.filters)
 });
 
-const mapDispatchToProps = dispatch => ({
-});
-
 export default connect(
-  mapStateToProps,
-  mapDispatchToProps
+  mapStateToProps
 )(Items);
